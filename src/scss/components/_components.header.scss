@@ -7,12 +7,13 @@
  * Component Block
  */
 
-//.Header {}
+.Header {
+  padding: 7% 7% 0 7%;
+}
 
 .Header-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 140%;
-  @include margin-bottom(1);
 }
 
 .Header-nav {
