@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #COMPONENTS: HEADER
+\*------------------------------------*/
+
+
+/**
+ * Component Block
+ */
+
+//.Header {}
+
+.Header-title {
+  font-weight: 600;
+  font-size: 140%;
+  @include margin-bottom(1);
+}
+
+.Header-nav {
+  display: none;
+}
+
+@include breakpoint(sm) {
+ .Header-nav {
+   display: block
+ }
+}
+
+.Header-link {
+  display: inline;
+  margin-left: 16px;
+}

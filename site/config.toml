@@ -1,0 +1,100 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Type Services"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+# Enable Emojis because why the hell not
+enableEmoji = true
+
+[permalinks]
+  articles = "/:section/:slug/"
+  reading = "/:section/:slug/"
+  page = "/:title/"
+
+[params]
+  keywords = "Hand Drawn Type, Typography Design, Type Foundry, Typefaces, Fonts"
+  description = "Typography Design. London. Hamburg."
+  strapline = "Retail and Custom Typography"
+  location = "Hamburg, Germany"
+  twitter = "@harrycresswell"
+
+[author]
+  name = "Harry Cresswell"
+
+[taxonomies]
+  tag = "tags"
+
+[[menu.main]]
+  name = "Fonts"
+  url = "/fonts/"
+  weight = 5
+
+[[menu.main]]
+  name = "Custom"
+  url = "/custom-fonts/"
+  weight = 10
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 15
+
+[[menu.main]]
+  name = "Free Fonts"
+  url = "/free-fonts/"
+  weight = 20
+
+[[menu.footer]]
+  name = "Font Licenses"
+  url = "/licensing/"
+  weight = 5
+
+[[menu.footer]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+[[menu.footer]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 15
+
+[[menu.mobile]]
+  name = "Fonts"
+  url = "/fonts/"
+  weight = 5
+
+[[menu.mobile]]
+  name = "Custom"
+  url = "/custom-fonts/"
+  weight = 10
+
+[[menu.mobile]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 15
+
+[[menu.mobile]]
+  name = "Free Fonts"
+  url = "/free-fonts/"
+  weight = 20
+
+[[menu.mobile]]
+  name = "Font Licenses"
+  url = "/licensing/"
+  weight = 25
+
+[[menu.mobile]]
+  name = "About"
+  url = "/about/"
+  weight = 30
+
+[[menu.mobile]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 35

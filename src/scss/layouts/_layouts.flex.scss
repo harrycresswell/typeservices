@@ -1,0 +1,102 @@
+/*------------------------------------*\
+    #LAYOUTS: FLEX
+\*------------------------------------*/
+
+
+/**
+ * Component Block
+ */
+
+/* Grid */
+
+.Flex-column {
+ flex-basis: 100%;
+}
+
+.Flex--gutters > div {
+ margin: 16px;
+}
+
+.Flex-row.Flex--nr{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 800px) {
+ .Flex-row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+ }
+
+ .Flex-column {
+   flex: 1;
+ }
+
+ // improve this stuff
+
+ .Flex--75 {
+   flex: 7.5;
+ }
+
+ .Flex--50 {
+   flex: 5;
+ }
+
+ .Flex--25 {
+   flex: 2.5;
+ }
+
+ .Flex--20 {
+   flex: 2;
+ }
+
+ //
+
+ .Flex-column--1of2 {
+   flex: 0 0 50%;
+ }
+
+ .Flex-column--1of4 {
+   flex: 0 0 25%;
+ }
+
+ .Flex--1of3 {
+   flex: 0 0 30%;
+ }
+
+  .Flex--1of6 {
+   flex: 0 0 16.6666%;
+ }
+}
+
+/* Justify per row*/
+.Flex--right {
+ justify-content: flex-end;
+}
+.Flex--center {
+ justify-content: center;
+}
+
+/* Alignment per row */
+.Flex-row--top {
+ align-items: flex-start;
+}
+.Flex-row--bottom {
+ align-items: flex-end;
+}
+.Flex-row--center {
+ align-items: center;
+}
+
+/* Alignment per column */
+.Flex-column--top {
+ align-self: flex-start;
+}
+.Flex-column--bottom {
+ align-self: flex-end;
+}
+.Flex-column--center {
+ align-self: center;
+}

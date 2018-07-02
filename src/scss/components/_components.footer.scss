@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #COMPONENTS: FOOTER
+\*------------------------------------*/
+
+
+/**
+ * Component Block
+ */
+
+.Footer {
+  @include margin-top(3);
+}
+
+.Footer-nav {
+  display: none;
+}
+
+@include breakpoint(sm) {
+ .Footer-nav {
+   display: block
+ }
+}
+
+.Footer-link {
+  margin-right: 16px;
+}

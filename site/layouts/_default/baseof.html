@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+
+    <title>{{ $.Site.Title }} &middot; {{ $.Site.Params.strapline }}</title>
+
+    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{.}}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="c60dc1e9be844be29f0fb5525b9afe6f"/>
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="[Google site verification ID here]" />
+
+  </head>
+  <body>
+
+    <div id="main" class="Main">
+
+    {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+    {{ block "main" . }}{{end}}
+
+    </div>
+
+    {{ partial "mobile-menu.html" . }}
+
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+    {{ block "scripts" . }}{{ partial "scripts" . }}{{end}}
+
+  </body>
+</html>
