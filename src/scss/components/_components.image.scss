@@ -17,3 +17,7 @@
 .Image + p {
   @include margin-top(1);
 }
+
+.Image + .Image {
+  @include margin-top(0.5);
+}
