@@ -9,9 +9,17 @@ buttontext: add button text
 
 Introducing Winterhude Hand Grotesque. A handwritten textured brush font.
 
-WHG is characterised by it’s rough yet highly legible hand drawn glyphs. The font features a loose setting and a large x-height, improving legibility at small sizes. Designed to be used at smaller sizes, specifically when paired with larger display fonts.
+WHG is characterised by it’s rough yet highly legible hand drawn glyphs. The font features a loose setting and a large x-height, improving legibility at small sizes. It’s  a great choice to use in stamps, stickers, text banners and any other creative applications, specifically when paired with larger display fonts.
 
-It’s also a great choice to use in stamps, stickers, text banners and any other creative applications.
+{{< img src="/img/type-services-winterhude-hand-grotesque-01" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-02" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-03" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-04" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-05" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-06" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-07" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-08" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
+{{< img src="/img/type-services-winterhude-hand-grotesque-09" type="jpg" alt="Type Services Winterhude Hand Grotesque" >}}
 
 ### Includes:
 

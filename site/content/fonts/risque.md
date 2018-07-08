@@ -11,6 +11,14 @@ RISQUÉ is hand painted san-serif font, perfect for display use in a wide range 
 
 Hand painted using oil pastel, each glyph is full of character and unique texture. RISQUÉ is an ideal font for use on any digital project which requires text with a natural, hand drawn feel.
 
+{{< img src="/img/type-services-risque-01" type="jpg" alt="Type Services Risqué" >}}
+{{< img src="/img/type-services-risque-02" type="jpg" alt="Type Services Risqué" >}}
+{{< img src="/img/type-services-risque-03" type="jpg" alt="Type Services Risqué" >}}
+{{< img src="/img/type-services-risque-04" type="jpg" alt="Type Services Risqué" >}}
+{{< img src="/img/type-services-risque-05" type="jpg" alt="Type Services Risqué" >}}
+{{< img src="/img/type-services-risque-06" type="jpg" alt="Type Services Risqué" >}}
+{{< img src="/img/type-services-risque-07" type="jpg" alt="Type Services Risqué" >}}
+
 ### Includes:
 
 - EOT, OTF, TTF, WOFF & WOFF2 formats.
