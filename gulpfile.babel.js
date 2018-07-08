@@ -71,15 +71,15 @@ gulp.task("img", () =>
   // Resize images (use with <img> shortcode in hugo)
     .pipe(responsive({
       "*": [{
-        width: 480,
+        width: 768,
         rename: {suffix: "-sm"},
       }, {
-        width: 480 * 2,
+        width: 768 * 2,
         rename: {suffix: "-sm@2x"},
       }, {
-        width: 960,
+        width: 1200,
       }, {
-        width: 960 * 2,
+        width: 1200 * 2,
         rename: {suffix: "@2x"},
       }],
     }, {
