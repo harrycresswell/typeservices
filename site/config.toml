@@ -22,6 +22,8 @@ enableEmoji = true
   strapline = "Retail and Custom Typography"
   location = "Hamburg, Germany"
   twitter = "@harrycresswell"
+  # Set Cloudinary URL for image hosting
+  cloudinary_url = "https://res.cloudinary.com/harrycresswell/image/upload"
 
 [author]
   name = "Harry Cresswell"

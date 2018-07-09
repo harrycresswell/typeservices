@@ -1,8 +1,8 @@
 ---
 title: "Risqué"
 date: 2018-07-02T15:30:19+01:00
-featuredimage: add image url
-listimage: add image url
+featuredimage: v1531128162/typeservices/type-services-risque-01.jpg
+listimage: v1531128300/typeservices/type-services-risque-1340x1340.jpg
 link: add download link
 buttontext: add button text
 ---
@@ -11,13 +11,13 @@ RISQUÉ is hand painted san-serif font, perfect for display use in a wide range 
 
 Hand painted using oil pastel, each glyph is full of character and unique texture. RISQUÉ is an ideal font for use on any digital project which requires text with a natural, hand drawn feel.
 
-{{< img src="/img/type-services-risque-01" type="jpg" alt="Type Services Risqué" >}}
-{{< img src="/img/type-services-risque-02" type="jpg" alt="Type Services Risqué" >}}
-{{< img src="/img/type-services-risque-03" type="jpg" alt="Type Services Risqué" >}}
-{{< img src="/img/type-services-risque-04" type="jpg" alt="Type Services Risqué" >}}
-{{< img src="/img/type-services-risque-05" type="jpg" alt="Type Services Risqué" >}}
-{{< img src="/img/type-services-risque-06" type="jpg" alt="Type Services Risqué" >}}
-{{< img src="/img/type-services-risque-07" type="jpg" alt="Type Services Risqué" >}}
+
+{{< cld src="v1531128163/typeservices/type-services-risque-02.jpg" alt="Type Services Risqué" >}}
+{{< cld src="v1531128160/typeservices/type-services-risque-03.jpg" alt="Type Services Risqué" >}}
+{{< cld src="v1531128159/typeservices/type-services-risque-04.jpg" alt="Type Services Risqué" >}}
+{{< cld src="v1531128157/typeservices/type-services-risque-05.jpg" alt="Type Services Risqué" >}}
+{{< cld src="v1531128157/typeservices/type-services-risque-06.jpg" alt="Type Services Risqué" >}}
+{{< cld src="v1531128160/typeservices/type-services-risque-07.jpg" alt="Type Services Risqué" >}}
 
 ### Includes:
 

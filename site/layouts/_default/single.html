@@ -3,7 +3,17 @@
   <section class="Container">
       <article id="content" class="Post">
           <header class="PostHeader">
-              <h1 class="PostHeader-title">{{ .Title }}</h1>
+            <!-- If external link exists in post matter, else show post page-->
+            {{ if isset .Params "featuredimage" }}
+            <div class="Image">
+              <img
+                data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.featuredimage }}"
+                class="cld-responsive Lightbox">
+            </div>
+            <h1 class="PostHeader-title">{{ .Title }}</h1>
+            {{else}}
+            <h1 class="PostHeader-title">{{ .Title }}</h1>
+            {{ end }}
           </header>
 
           {{ .Content }}
