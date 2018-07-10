@@ -30,6 +30,8 @@
 
     {{ block "main" . }}{{end}}
 
+    {{ block "newsletter" . }}{{ partial "newsletter" . }}{{end}}
+
     </div>
 
     {{ partial "mobile-menu.html" . }}
