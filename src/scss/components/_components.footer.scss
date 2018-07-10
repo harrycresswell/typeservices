@@ -17,6 +17,10 @@
   display: none;
 }
 
+.Footer-copy {
+  display: inline-block;
+}
+
 @include breakpoint(sm) {
  .Footer-nav {
    display: block

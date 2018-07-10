@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #COMPONENTS: POST LIST
+\*------------------------------------*/
+
+
+/**
+ * Component Block
+ */
+
+ //.PostList {}
+
+.PostList-title {
+  @include margin-top(1);
+  max-width: 300px;
+}
