@@ -7,10 +7,11 @@ link: add download link
 buttontext: add button text
 ---
 
-Introducing Winterhude Hand Grotesque. A handwritten textured brush font.
+Characterised by rough yet highly legible hand drawn glyphs. WHG features a loose setting and a large x-height, improving legibility at small sizes. It’s  a great choice to use in stamps, stickers, text banners and any other creative applications, specifically when paired with larger display fonts.
 
-WHG is characterised by it’s rough yet highly legible hand drawn glyphs. The font features a loose setting and a large x-height, improving legibility at small sizes. It’s  a great choice to use in stamps, stickers, text banners and any other creative applications, specifically when paired with larger display fonts.
+{{< button link="https://gum.co/winterhude" text="Download it free" >}}
 
+{{< cld src="v1531130409/type-services-winterhude-hand-grotesque-cover.jpg" alt="Type Services Winterhude Hand Grotesque" >}}
 {{< cld src="v1531128965/typeservices/type-services-winterhude-hand-grotesque-02.jpg" alt="Type Services Winterhude Hand Grotesque" >}}
 {{< cld src="v1531128958/typeservices/type-services-winterhude-hand-grotesque-03.jpg" alt="Type Services Winterhude Hand Grotesque" >}}
 {{< cld src="v1531128962/typeservices/type-services-winterhude-hand-grotesque-04.jpg" alt="Type Services Winterhude Hand Grotesque" >}}
@@ -27,5 +28,3 @@ WHG is characterised by it’s rough yet highly legible hand drawn glyphs. The f
 - Punctuation, Symbols and Marks
 - EOT, OTF, TTF, WOFF & WOFF2 formats
 - One Font Weight
-
-{{< button link="https://gum.co/winterhude" text="Download it free" >}}

@@ -7,7 +7,11 @@ link: add download link
 buttontext: add button text
 ---
 
-An ultra bold brush font with a notable painterly feel. Characterised by heavy, textured brush strokes, this brush is as natural as it gets. I have done very little editing  in order to maintain the dry brush style and emphasise the hand painted aesthetic. It’s application is perfect for use in displays, branding projects, logos, signage, posters, invites and more.
+An ultra bold brush font with a notable painterly feel. Characterised by heavy, textured brush strokes. I have done very little editing in order to maintain a dry brush style and emphasise the hand painted aesthetic. It’s application is perfect for use in displays, branding projects, logos, signage, posters, invites and more.
+
+{{< button link="https://gum.co/europa" text="Download it free" >}}
+
+{{< cld src="v1531125092/typeservices/type-services-europa-banner-01.jpg" alt="Type Services Europa Brush Script" >}}
 {{< cld src="v1531127074/typeservices/type-services-europa-banner-02.jpg" alt="Type Services Europa Brush Script" >}}
 {{< cld src="v1531127075/typeservices/type-services-europa-banner-03.jpg" alt="Type Services Europa Brush Script" >}}
 {{< cld src="v1531127074/typeservices/type-services-europa-banner-04.jpg" alt="Type Services Europa Brush Script" >}}
@@ -24,5 +28,3 @@ An ultra bold brush font with a notable painterly feel. Characterised by heavy, 
 - English Language only.
 - Upper & Lowercase.
 - Punctuation, numerals and symbols.
-
-{{< button link="https://gum.co/europa" text="Download it free" >}}

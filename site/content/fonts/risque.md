@@ -7,11 +7,11 @@ link: add download link
 buttontext: add button text
 ---
 
-RISQUÉ is hand painted san-serif font, perfect for display use in a wide range of creative projects and graphic applications including posters, digital painting, illustration and more.
+Hand painted using oil pastel, each glyph is full of character and unique texture creating a natural, hand drawn feel. Perfect for display use in a wide range of creative projects and graphic applications including posters, digital painting, illustration and more.
 
-Hand painted using oil pastel, each glyph is full of character and unique texture. RISQUÉ is an ideal font for use on any digital project which requires text with a natural, hand drawn feel.
+{{< button link="https://gum.co/risque" text="Download it free" >}}
 
-
+{{< cld src="v1531128162/typeservices/type-services-risque-01.jpg" alt="Type Services Risqué" >}}
 {{< cld src="v1531128163/typeservices/type-services-risque-02.jpg" alt="Type Services Risqué" >}}
 {{< cld src="v1531128160/typeservices/type-services-risque-03.jpg" alt="Type Services Risqué" >}}
 {{< cld src="v1531128159/typeservices/type-services-risque-04.jpg" alt="Type Services Risqué" >}}
@@ -26,5 +26,3 @@ Hand painted using oil pastel, each glyph is full of character and unique textur
 - Upper, Lowercase
 - Western European Language Support
 - Punctuation, Symbols and Marks
-
-{{< button link="https://gum.co/risque" text="Download it free" >}}
