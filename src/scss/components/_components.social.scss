@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #COMPONENTS: SOCIAL
+\*------------------------------------*/
+
+
+/**
+ * Component Block
+ */
+
+.Social {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.Social-icon {
+  display: inline-block;
+  height: 20px;
+  margin-right: 16px;
+  width: 20px;
+
+  svg {
+    color: $color-dark;
+    height: 20px;
+    width: 20px;
+  }
+}
