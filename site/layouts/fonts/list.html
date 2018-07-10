@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+  <section class="Container">
+      <div class="PostList Grid Grid--3">
+        {{ range .Data.Pages }}
+          {{ if isset .Params "featuredimage" }}
+          <div class="PostList-item">
+              <div class="Image">
+                <a href="{{ .Permalink }}">
+                  <img
+                    data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
+                    class="cld-responsive Lightbox">
+                </a>
+              </div>
+              <h3 class="PostList-title">
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h3>
+              {{else}}
+              <h3 class="PostHeader-title">
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h3>
+              {{ end }}
+          </div>
+        {{ end }}
+      </div>
+  </section>
+
+{{ end }}
