@@ -24,4 +24,8 @@
   .Grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .Grid--3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
