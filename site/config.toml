@@ -2,11 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Type Services"
-
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details:
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+pluralizelisttitles = false
 
 # Enable Emojis because why the hell not
 enableEmoji = true
@@ -29,6 +25,7 @@ enableEmoji = true
   socialPintrest = "https://www.pinterest.co.uk/halcresswell/type-services/"
   socialInstagram = "https://www.instagram.com/typeservices/"
   socialBehance = "https://www.behance.net/typeservices"
+
 [author]
   name = "Harry Cresswell"
 
@@ -46,14 +43,9 @@ enableEmoji = true
   weight = 10
 
 [[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 15
-
-[[menu.main]]
   name = "Free Fonts"
   url = "/free-fonts/"
-  weight = 20
+  weight = 15
 
 [[menu.footer]]
   name = "Font Licenses"
@@ -81,26 +73,21 @@ enableEmoji = true
   weight = 10
 
 [[menu.mobile]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 15
-
-[[menu.mobile]]
   name = "Free Fonts"
   url = "/free-fonts/"
-  weight = 20
+  weight = 15
 
 [[menu.mobile]]
   name = "Font Licenses"
   url = "/licensing/"
-  weight = 25
+  weight = 20
 
 [[menu.mobile]]
   name = "About"
   url = "/about/"
-  weight = 30
+  weight = 25
 
 [[menu.mobile]]
   name = "Contact"
   url = "/contact/"
-  weight = 35
+  weight = 30
