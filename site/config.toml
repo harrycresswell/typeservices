@@ -7,6 +7,8 @@ pluralizelisttitles = false
 # Enable Emojis because why the hell not
 enableEmoji = true
 
+googleAnalytics = "UA-84736644-3"
+
 [permalinks]
   articles = "/:section/:slug/"
   reading = "/:section/:slug/"
