@@ -10,7 +10,7 @@
 //.Newsletter {}
 
 .Newsletter-title {
-  @include margin-top(1);
+  @include margin-top(0);
 }
 
 @include breakpoint(md) {
