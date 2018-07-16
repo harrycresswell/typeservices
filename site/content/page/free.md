@@ -2,17 +2,17 @@
 title: "Free Fonts"
 date: 2018-07-02T15:15:29+01:00
 ---
-Who doesn’t like free fonts?! All TS fonts are currently available for free.
+Who doesn’t like free fonts?!
 
-To get hold of them visit the Fonts page and hit the download link. When the form pops up, enter ‘0’ and hit ‘I want this!’ to start the download. Please read the licencing information if you’re unsure how you can use your new font.
+All Type Services fonts are currently available for free.
+
+To get hold of any font for free visit the Fonts page and hit the download link. To start the download, enter ‘0’ and hit ‘I want this!’ in the form. Please read the [licensing information](/licensing/) if you’re unsure how you can use your new font.
 
 ### One Tree Planted
 
-If however you *do* wish to make a donation for a font you download you are more than welcome and it would be greatly appreciated. 
+For every donation of £2 or more, £1 of your donation will go towards the [OneTreePlanted.org](https://onetreeplanted.org/) reforestation program, where one tree is planted for every £1 donated. Donations are completely optional, you are still very welcome to download fonts for free.
 
-One tree will be planted for every donation above £1. So if you pay £2, for example, 50% from that donation will go towards the [OneTreePlanted.org](https://onetreeplanted.org/) reforestation program. I batch donations on a monthly basis.
-
-### Get font updates 
+### Get font updates
 
 From time to time I update my fonts, add new glyphs and extend their support. Leave your email below to be notified about any changes and new font releases.
 
