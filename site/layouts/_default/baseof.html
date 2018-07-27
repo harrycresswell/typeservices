@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="c60dc1e9be844be29f0fb5525b9afe6f"/>
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="bFICG7Sjq2n57LbNl-jD_OezOVx1XnG2xZRtsLxrsHY" />
+    
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
     <title>{{ $.Site.Title }} &middot; {{ $.Site.Params.strapline }}</title>
@@ -16,10 +21,6 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css"/>
-    <!-- Pinterest Verification -->
-    <meta name="p:domain_verify" content="c60dc1e9be844be29f0fb5525b9afe6f"/>
-    <!-- Google Verification -->
-    <meta name="google-site-verification" content="[Google site verification ID here]" />
 
   </head>
   <body>
