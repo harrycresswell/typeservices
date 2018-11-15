@@ -2,26 +2,37 @@
 <html lang="{{ $.Site.Language.Lang }}">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}">
+    <meta property="og:description" name="description" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $.Site.BaseURL }}img/favicon.ico">
+    <meta property="og:type" content="website" />
+
+    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{.}}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+
     <!-- Pinterest Verification -->
     <meta name="p:domain_verify" content="c60dc1e9be844be29f0fb5525b9afe6f"/>
     <!-- Google Verification -->
     <meta name="google-site-verification" content="bFICG7Sjq2n57LbNl-jD_OezOVx1XnG2xZRtsLxrsHY" />
-    
+
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-
-    <title>{{ $.Site.Title }} &middot; {{ $.Site.Params.strapline }}</title>
-
-    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{.}}">{{ end }}
-    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css"/>
-
+    <!-- RSS -->
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
   </head>
   <body>
 
