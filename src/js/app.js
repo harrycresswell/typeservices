@@ -1,22 +1,5 @@
 // JS Goes here - ES6 supported
 
-// Load instafeed
-$(document).ready(function() {
-
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: '5359496962',
-        limit: 8,
-        resolution: 'standard_resolution',
-        accessToken: '5359496962.1677ed0.860c562fb32a492ea81afe4b83700374',
-        sortBy: 'most-recent',
-        template: '<div class="Grid-item"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
-    });
-
-    userFeed.run();
-
-});
-
 // Animate Hamburger
 $(document).ready(function(){
   $(".Hamburger").click(function(){
