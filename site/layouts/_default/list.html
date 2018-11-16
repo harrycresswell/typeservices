@@ -6,9 +6,10 @@
       <div class="PostList-item">
           <div class="Image">
             <a href="{{ .Permalink }}">
+              <span class="u-visually-hidden">{{ .Title }}</span>
               <img
                 data-src="{{ .Site.Params.cloudinary_url }}/f_auto,q_auto,w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
-                class="cld-responsive Lightbox">
+                class="cld-responsive Lightbox" alt="{{ .Title }}">
             </a>
           </div>
           <h3 class="PostList-title">
