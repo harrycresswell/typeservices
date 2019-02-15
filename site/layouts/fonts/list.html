@@ -4,15 +4,17 @@
       <div class="PostList Grid Grid--3">
         {{ range .Data.Pages }}
           {{ if isset .Params "featuredimage" }}
-          <div class="PostList-item">
-              <div class="Image">
-                <a href="{{ .Permalink }}">
-                  <img
-                    data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
-                    class="cld-responsive Lightbox">
-                </a>
+          <div class="PostListItem">
+              <div class="PostListItem-image">
+                <div class="PostListItem-imageRatio">
+                  <a href="{{ .Permalink }}">
+                    <img
+                      data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
+                      class="cld-responsive Lightbox lazyload">
+                  </a>
+                </div>
               </div>
-              <h3 class="PostList-title">
+              <h3 class="PostListItem-title">
                   <a href="{{ .Permalink }}">{{ .Title }}</a>
               </h3>
               {{else}}

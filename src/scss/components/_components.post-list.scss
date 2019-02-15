@@ -7,9 +7,35 @@
  * Component Block
  */
 
- //.PostList {}
+ .PostList {
+  @include margin-top(1.5);
+ }
 
-.PostList-title {
+ .PostListItem-image a {
+   display: block;
+ }
+
+ .PostListItem-imageRatio {
+  background-color: #f6f6f6;
+  height: 0;
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+
+  img {
+    display: block;
+    /* height: 100%; */
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+ }
+
+
+
+.PostListItem-title {
   @include margin-top(1);
   max-width: 300px;
 }
