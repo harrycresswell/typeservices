@@ -13,31 +13,44 @@
   @include margin-top(0);
 }
 
-@include breakpoint(md) {
-  .NewsletterForm {
-    display: flex;
-  }
+.NewsletterForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewsletterForm-label {
+  @include margin-bottom(0.5);
 }
 
 .NewsletterForm-input {
-  margin-top: 16px;
-}
-
-@include breakpoint(md) {
-  .NewsletterForm-input {
-    margin-top: 0;
-    margin-right: 16px;
-    max-width: 35%;
-  }
+  @include margin-top(0.3);
+  @include margin-bottom(0.5);
 }
 
 .NewsletterForm-button {
-  width: 100%;
-  margin-top: 16px;
+  flex-grow: 1;
+  @include margin-top(0.5);
 }
 
+
 @include breakpoint(md) {
-  .NewsletterForm-button {
+  .NewsletterForm {
+    flex-direction: row;
+  }
+
+  .NewsletterForm-input {
+    @include margin-top(0.3);
+    margin-right: 16px;
+  }
+
+  .NewsletterForm-field {
+    flex: 1;
+    flex-grow: 2;
     margin-top: 0;
+    margin-right: 16px;
+  }
+
+  .NewsletterForm-button {
+    margin-top: 42px;
   }
 }

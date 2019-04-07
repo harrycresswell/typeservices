@@ -38,11 +38,13 @@
   width: 100%;
   -webkit-appearance: none;
   
-    &:focus,
-    &:active {
-      border: solid 2px $color-link;
-      transition: all .2s;
-    }
+  &:focus,
+  &:active {
+    border: 2px solid $color-link;
+    outline: 4px solid lighten($color-link, 70%);
+    outline-offset: 0;
+    transition: all .2s;
+  }
 
 }
 
