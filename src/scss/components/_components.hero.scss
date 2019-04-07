@@ -7,15 +7,32 @@
  * Component Block
  */
 
-//.Hero {}
+.Hero {
+  display: block;
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+  @include margin-top(2);
+  white-space: nowrap;
+}
 
 .Hero-title {
   font-size: calc(9rem + 10vw);
-  height: 240px;
+  height: 200px;
   margin-top: 0;
-  max-width: 1170px;
-  overflow: auto;
-  white-space: nowrap;
+  /* Hide the text to scroll*/
+  padding-left: 100%;
+  animation: scroll 20s infinite linear;
+}
+
+/* Make the text scroll*/
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-500%, 0);
+  }
 }
 
 @media (min-width: 600px) {
