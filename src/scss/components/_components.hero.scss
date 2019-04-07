@@ -25,18 +25,27 @@
   animation: scroll 20s infinite linear;
 }
 
-/* Make the text scroll*/
-@keyframes scroll {
+ /* Make the text scroll*/
+ @keyframes scroll {
   0% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-500%, 0);
+    transform: translate(-800%, 0);
   }
 }
 
-@media (min-width: 600px) {
+@include breakpoint(md) {
   .Hero-title {
-    height: 360px;
+    height: 300px;
+  }
+  /* Make the text scroll*/
+  @keyframes scroll {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-450%, 0);
+    }
   }
 }
