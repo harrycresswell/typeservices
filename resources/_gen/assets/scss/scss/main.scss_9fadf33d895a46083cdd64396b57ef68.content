@@ -1,0 +1,952 @@
+@charset "UTF-8";
+/*
+  You can use import statements to include partials:
+ */
+/*------------------------------------*\
+    #ABSTRACTS: COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+    #ABSTRACTS: BREAKPOINTS
+\*------------------------------------*/
+/**
+ * Breakpoints
+ *
+ *
+$base-font-size = 100%/16px
+  *
+*/
+/**
+* Mobile-first styles FTW
+*
+Example:
+*/
+aside.primary {
+  /* Regular content */ }
+  @media (min-width: 37.5em) {
+    aside.primary {
+      /* responsive content */ } }
+
+/*------------------------------------*\
+    #ABSTRACTS: TYPOGRAPHY
+\*------------------------------------*/
+/*
+* Courtesy of https://blog.codepen.io/2016/10/31/fluid-type-blogs/ and https://codepen.io/MadeByMike/pen/VvwqvW
+*/
+/*------------------------------------*\
+    #ABSTRACTS: SPACING
+\*------------------------------------*/
+/*------------------------------------*\
+    #BASE: BOX-SIZING
+\*------------------------------------*/
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html,
+body {
+  margin: 0; }
+
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: inline-block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+figure {
+  margin: 0; }
+
+/*------------------------------------*\
+    #BASE: BODY
+\*------------------------------------*/
+html {
+  font-feature-settings: "calt","liga","hist","onum","pnum"; }
+  html {
+    font-size: 16px; }
+    @media screen and (min-width: 320px) {
+      html {
+        font-size: calc(16px + 3 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      html {
+        font-size: 19px; } }
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.7rem;
+  font-style: normal; }
+
+p {
+  max-width: 675px;
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    p {
+      margin-bottom: 1.7rem; } }
+
+/*------------------------------------*\
+    #BASE: HEADINGS
+\*------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2f2f2f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  letter-spacing: -.015em; }
+
+h1 {
+  font-size: 2.0736rem;
+  line-height: 1;
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem; }
+  h1 {
+    font-size: 27.648px; }
+    @media screen and (min-width: 320px) {
+      h1 {
+        font-size: calc(27.648px + 46.47052741 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      h1 {
+        font-size: 74.11852741px; } }
+  @media screen and (min-width: 48em) {
+    h1 {
+      margin-top: 5.1rem; } }
+  @media screen and (min-width: 48em) {
+    h1 {
+      margin-bottom: 1.7rem; } }
+
+h2 {
+  font-size: 1.728rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem; }
+  h2 {
+    font-size: 23.04px; }
+    @media screen and (min-width: 320px) {
+      h2 {
+        font-size: calc(23.04px + 21.422224 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      h2 {
+        font-size: 44.462224px; } }
+  @media screen and (min-width: 48em) {
+    h2 {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    h2 {
+      margin-bottom: 1.7rem; } }
+
+h3 {
+  font-size: 1.44rem;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem; }
+  h3 {
+    font-size: 19.2px; }
+    @media screen and (min-width: 320px) {
+      h3 {
+        font-size: calc(19.2px + 7.472 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      h3 {
+        font-size: 26.672px; } }
+  @media screen and (min-width: 48em) {
+    h3 {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    h3 {
+      margin-bottom: 0.85rem; } }
+
+h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    h4 {
+      margin-top: 1.7rem; } }
+  @media screen and (min-width: 48em) {
+    h4 {
+      margin-bottom: 0.85rem; } }
+
+/*------------------------------------*\
+    #BASE: IMAGES
+\*------------------------------------*/
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure {
+  margin: 0; }
+
+figure > img {
+  display: block; }
+
+figcaption {
+  color: #888;
+  font-size: 70%; }
+
+/*------------------------------------*\
+    #BASE: LINKS
+\*------------------------------------*/
+a {
+  color: #222;
+  text-decoration: none;
+  transition: color .2s ease-in-out; }
+  a:hover {
+    color: black;
+    text-decoration: underline; }
+  a:visited {
+    border-bottom: 1px solid #222;
+    text-decoration: none; }
+  a:before {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+
+/*------------------------------------*\
+    #BASE: LISTS
+\*------------------------------------*/
+ul, ol {
+  color: #2f2f2f;
+  list-style-position: outside;
+  list-style-type: round;
+  max-width: 675px;
+  padding-left: 0; }
+
+ul + p {
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    ul + p {
+      margin-top: 1.7rem; } }
+
+/*------------------------------------*\
+    #BASE: QUOTES
+\*------------------------------------*/
+blockquote {
+  color: #222;
+  font-size: 1.728rem;
+  line-height: 1.3;
+  margin-left: 48px;
+  max-width: 32em;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  blockquote {
+    font-size: 19.2px; }
+    @media screen and (min-width: 320px) {
+      blockquote {
+        font-size: calc(19.2px + 7.472 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      blockquote {
+        font-size: 26.672px; } }
+  @media screen and (min-width: 48em) {
+    blockquote {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    blockquote {
+      margin-bottom: 3.4rem; } }
+  blockquote p {
+    margin-bottom: 0;
+    min-width: 90%; }
+  blockquote cite {
+    font-size: 60%;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+code,
+kbd,
+samp {
+  background: #f5f5f5;
+  color: #555;
+  font-size: 0.9rem;
+  padding: .125rem 0.35rem; }
+
+pre {
+  background: #f5f5f5;
+  font-size: 0.9rem;
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-wrap: normal;
+  padding: 3%; }
+
+/*------------------------------------*\
+    #BASE: SELECT
+\*------------------------------------*/
+select {
+  background: #f5f5f5;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.8rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline-style: none;
+  height: 64px;
+  width: 100%; }
+
+/*------------------------------------*\
+    #LAYOUTS: CONTAINER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Container {
+  margin: 0 auto;
+  max-width: 1340px;
+  padding: 7% 7% 0 7%; }
+
+/*------------------------------------*\
+    #LAYOUTS: FLEX
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+/* Grid */
+.Flex-column {
+  flex-basis: 100%; }
+
+.Flex--gutters > div {
+  margin: 16px; }
+
+.Flex-row.Flex--nr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+@media screen and (min-width: 800px) {
+  .Flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .Flex-column {
+    flex: 1; }
+  .Flex--75 {
+    flex: 7.5; }
+  .Flex--50 {
+    flex: 5; }
+  .Flex--25 {
+    flex: 2.5; }
+  .Flex--20 {
+    flex: 2; }
+  .Flex-column--1of2 {
+    flex: 0 0 50%; }
+  .Flex-column--1of4 {
+    flex: 0 0 25%; }
+  .Flex--1of3 {
+    flex: 0 0 30%; }
+  .Flex--1of6 {
+    flex: 0 0 16.6666%; } }
+
+/* Justify per row*/
+.Flex--right {
+  justify-content: flex-end; }
+
+.Flex--center {
+  justify-content: center; }
+
+/* Alignment per row */
+.Flex-row--top {
+  align-items: flex-start; }
+
+.Flex-row--bottom {
+  align-items: flex-end; }
+
+.Flex-row--center {
+  align-items: center; }
+
+/* Alignment per column */
+.Flex-column--top {
+  align-self: flex-start; }
+
+.Flex-column--bottom {
+  align-self: flex-end; }
+
+.Flex-column--center {
+  align-self: center; }
+
+/*------------------------------------*\
+    #LAYOUTS: GRID
+\*------------------------------------*/
+/**
+* Component Block
+*/
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px; }
+
+@media (min-width: 37.5em) {
+  .Grid {
+    grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 64em) {
+  .Grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .Grid--3 {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+/*------------------------------------*\
+    #OBJECTS: BUTTON
+\*------------------------------------*/
+.Button-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 48em) {
+    .Button-container {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    .Button-container {
+      margin-bottom: 3.4rem; } }
+
+/**
+ * Component Block
+ */
+.Button {
+  border-width: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  background: #2f2f2f;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+  font-size: 80%;
+  height: 56px;
+  outline: none;
+  outline-style: none;
+  padding: 16px 24px;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  width: 100%; }
+  .Button:hover {
+    color: #fff;
+    text-decoration: none; }
+
+.Button:hover {
+  background-color: #2f2f2f;
+  box-shadow: 0 10px 28px rgba(47, 47, 47, 0.3);
+  transform: translateY(-2px); }
+
+a .Button {
+  text-decoration: none; }
+
+/*------------------------------------*\
+    #OBJECTS: FORM
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Form-label {
+  display: block;
+  margin-bottom: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    .Form-label {
+      margin-bottom: 0.85rem; } }
+
+::placeholder {
+  color: #888; }
+
+/**
+  * Component Element
+  */
+.Form-input,
+.Form-textarea,
+.Form-select {
+  background: #f5f5f5;
+  border: solid 2px #f5f5f5;
+  border-radius: 0;
+  font-size: 0.8rem;
+  height: 56px;
+  margin-top: 0.375rem;
+  outline: none;
+  outline-style: none;
+  padding: 0 16px;
+  position: relative;
+  transition: all .2s;
+  width: 100%;
+  -webkit-appearance: none; }
+  @media screen and (min-width: 48em) {
+    .Form-input,
+    .Form-textarea,
+    .Form-select {
+      margin-top: 0.425rem; } }
+  .Form-input:focus, .Form-input:active,
+  .Form-textarea:focus,
+  .Form-textarea:active,
+  .Form-select:focus,
+  .Form-select:active {
+    border: 2px solid #222;
+    outline: 4px solid #d5d4d4;
+    outline-offset: 0;
+    transition: all .2s; }
+
+.Form-select:after {
+  color: #000;
+  content: '▾';
+  display: block;
+  height: 14px;
+  position: absolute;
+  right: 24px;
+  top: 16px;
+  width: 14px; }
+
+.Form-textarea {
+  font-size: 0.8rem;
+  min-height: 96px;
+  padding-top: 16px; }
+
+.Form-button {
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    .Form-button {
+      margin-bottom: 1.7rem; } }
+
+/*------------------------------------*\
+    #COMPONENTS: HEADER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Header {
+  font-weight: 500; }
+
+.Header-title {
+  font-size: 140%; }
+
+.Header-nav {
+  display: none; }
+
+@media (min-width: 37.5em) {
+  .Header-nav {
+    display: block; } }
+
+.Header-link {
+  display: inline;
+  margin-left: 16px; }
+
+/*------------------------------------*\
+    #COMPONENTS: FOOTER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Footer {
+  margin: 0 auto;
+  max-width: 1340px;
+  padding: 7%;
+  font-weight: 500; }
+
+.Footer-nav {
+  display: none; }
+
+.Footer-copy {
+  display: inline-block; }
+
+@media (min-width: 37.5em) {
+  .Footer-nav {
+    display: block; } }
+
+.Footer-link {
+  margin-right: 16px; }
+
+/*------------------------------------*\
+    #COMPONENTS: HERO
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Hero {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 3rem;
+  white-space: nowrap; }
+  @media screen and (min-width: 48em) {
+    .Hero {
+      margin-top: 3.4rem; } }
+
+.Hero-title {
+  font-size: calc(9rem + 10vw);
+  height: 200px;
+  margin-top: 0;
+  padding-left: 96px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  .Hero-title::-webkit-scrollbar {
+    display: none; }
+
+/* Make the text scroll*/
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-800%, 0); } }
+
+@media (min-width: 48em) {
+  .Hero-title {
+    height: 370px; }
+  /* Make the text scroll*/
+  @keyframes scroll {
+    0% {
+      transform: translate(0, 0); }
+    100% {
+      transform: translate(-450%, 0); } } }
+
+/*------------------------------------*\
+    #COMPONENTS: IMAGE
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Image {
+  margin-top: 2.25rem; }
+  @media screen and (min-width: 48em) {
+    .Image {
+      margin-top: 2.55rem; } }
+  .Image figcaption {
+    margin-top: 0.375rem; }
+    @media screen and (min-width: 48em) {
+      .Image figcaption {
+        margin-top: 0.425rem; } }
+
+.Image + p {
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    .Image + p {
+      margin-top: 1.7rem; } }
+
+.Image + .Image {
+  margin-top: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    .Image + .Image {
+      margin-top: 0.85rem; } }
+
+/*------------------------------------*\
+    #COMPONENTS: HAMBURGER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Hamburger {
+  display: block;
+  float: right; }
+
+@media (min-width: 37.5em) {
+  .Hamburger {
+    display: none; } }
+
+.Hamburger-line {
+  width: 32px;
+  height: 2px;
+  background-color: #2f2f2f;
+  display: block;
+  margin: 6px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.Hamburger:hover {
+  cursor: pointer; }
+
+#Hamburger.is-active .Hamburger-line:nth-child(2) {
+  opacity: 0; }
+
+#Hamburger.is-active .Hamburger-line:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg); }
+
+#Hamburger.is-active .Hamburger-line:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg); }
+
+/*------------------------------------*\
+    #COMPONENTS: MOBILE MENU
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Mobile-menu {
+  background: #fff;
+  border-left: solid 1px #2f2f2f;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 10000px;
+  padding-top: 28px;
+  z-index: 1;
+  /* Make sure the z-index is lower than the .page-container */ }
+
+.Mobile-menu-link {
+  color: #2f2f2f;
+  display: block;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  max-width: 170px; }
+  @media screen and (min-width: 48em) {
+    .Mobile-menu-link {
+      margin-top: 1.7rem; } }
+  @media screen and (min-width: 48em) {
+    .Mobile-menu-link {
+      margin-left: 3.4rem; } }
+
+.Main {
+  background: #fff;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  /* X, Y, Z */
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 2; }
+
+.Main, .Mobile-menu {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  overflow: hidden; }
+
+/* Animating mobile menu */
+/* Show the menu when animating or visible */
+.animating .Mobile-menu, .menu-visible .Mobile-menu {
+  display: block; }
+
+/***
+ * If the animating class is present then apply
+ * the CSS transition to .page-container over 250ms.
+ */
+.animating .Main {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out; }
+
+/***
+ * If the left class is present then transform
+ * the .page-container element 240px to the left.
+ */
+.animating.left .Main {
+  transform: translate3d(-380px, 0, 0);
+  -webkit-transform: translate3d(-320px, 0, 0); }
+
+/***
+ * If the right class is present then transform
+ * the .page-container element 240px to the right.
+ */
+.animating.right .Main {
+  transform: translate3d(320px, 0, 0);
+  -webkit-transform: translate3d(320px, 0, 0); }
+
+/***
+ * If the menu-visible class is present then
+ * shift the .page-container 240px from the right edge
+ * via position: absolute to keep it in the
+ * open position. When .animating, .left and
+ * .right classes are not present the CSS
+ * transform does not apply to .page-container.
+ */
+.menu-visible .Main {
+  right: 320px; }
+
+/*------------------------------------*\
+    #COMPONENTS: INSTA
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Insta {
+  margin-top: 4.5rem; }
+  @media screen and (min-width: 48em) {
+    .Insta {
+      margin-top: 5.1rem; } }
+
+/*------------------------------------*\
+    #COMPONENTS: MAILING-LIST
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Newsletter-title {
+  margin-top: 0rem; }
+  @media screen and (min-width: 48em) {
+    .Newsletter-title {
+      margin-top: 0rem; } }
+
+.NewsletterForm {
+  display: flex;
+  flex-direction: column; }
+
+.NewsletterForm-label {
+  margin-bottom: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    .NewsletterForm-label {
+      margin-bottom: 0.85rem; } }
+
+.NewsletterForm-input {
+  margin-top: 0.45rem;
+  margin-bottom: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    .NewsletterForm-input {
+      margin-top: 0.51rem; } }
+  @media screen and (min-width: 48em) {
+    .NewsletterForm-input {
+      margin-bottom: 0.85rem; } }
+
+.NewsletterForm-button {
+  flex-grow: 1;
+  margin-top: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    .NewsletterForm-button {
+      margin-top: 0.85rem; } }
+
+@media (min-width: 48em) {
+  .NewsletterForm {
+    flex-direction: row; }
+  .NewsletterForm-input {
+    margin-top: 0.45rem;
+    margin-right: 16px; } }
+  @media screen and (min-width: 48em) and (min-width: 48em) {
+    .NewsletterForm-input {
+      margin-top: 0.51rem; } }
+
+@media (min-width: 48em) {
+  .NewsletterForm-field {
+    flex: 1;
+    flex-grow: 2;
+    margin-top: 0;
+    margin-right: 16px; }
+  .NewsletterForm-button {
+    margin-top: 42px; } }
+
+/*------------------------------------*\
+    #COMPONENTS: SOCIAL
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Social {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle; }
+
+.Social-icon {
+  display: inline-block;
+  height: 20px;
+  margin-right: 16px;
+  width: 20px; }
+  .Social-icon svg {
+    color: #2f2f2f;
+    height: 20px;
+    width: 20px; }
+
+/*------------------------------------*\
+    #COMPONENTS: POST LIST
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.PostList {
+  margin-top: 2.25rem; }
+  @media screen and (min-width: 48em) {
+    .PostList {
+      margin-top: 2.55rem; } }
+
+.PostListItem-image a {
+  display: block; }
+
+.PostListItem-imageRatio {
+  background-color: #f6f6f6;
+  height: 0;
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%; }
+  .PostListItem-imageRatio img {
+    display: block;
+    /* height: 100%; */
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.PostListItem-title {
+  margin-top: 1.5rem;
+  max-width: 300px; }
+  @media screen and (min-width: 48em) {
+    .PostListItem-title {
+      margin-top: 1.7rem; } }
+
+/*------------------------------------*\
+    #COMPONENTS: POST
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Post a {
+  text-decoration: none;
+  border-bottom: solid 1px #222; }
+  .Post a:hover {
+    color: #542bff;
+    border-bottom: solid 1px #542bff; }
+
+/*------------------------------------*\
+    #UTILITIES: LAYOUT
+\*------------------------------------*/
+.u-visually-hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
+
+.u-tr {
+  text-align: right; }
+
+/*------------------------------------*\
+    #UTILITIES: LAZYSIZES
+\*------------------------------------*/
+.lazyload,
+.lazyloading {
+  opacity: 0; }
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms; }
+
+/*# sourceMappingURL=main.css.map */

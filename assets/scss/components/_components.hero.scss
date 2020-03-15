@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    #COMPONENTS: HERO
+\*------------------------------------*/
+
+
+/**
+ * Component Block
+ */
+
+.Hero {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  @include margin-top(2);
+  white-space: nowrap;
+}
+
+.Hero-title {
+  font-size: calc(9rem + 10vw);
+  height: 200px;
+  margin-top: 0;
+  padding-left: 96px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+/* Make the text scroll*/
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-800%, 0);
+  }
+}
+
+@include breakpoint(md) {
+  .Hero-title {
+    height: 370px;
+  }
+
+  /* Make the text scroll*/
+  @keyframes scroll {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(-450%, 0);
+    }
+  }
+}

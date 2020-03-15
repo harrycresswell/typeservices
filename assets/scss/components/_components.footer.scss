@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #COMPONENTS: FOOTER
+\*------------------------------------*/
+
+
+/**
+ * Component Block
+ */
+
+.Footer {
+  margin: 0 auto;
+  max-width: 1340px;
+  padding: 7%;
+  font-weight: 500;
+}
+
+.Footer-nav {
+  display: none;
+}
+
+.Footer-copy {
+  display: inline-block;
+}
+
+@include breakpoint(sm) {
+  .Footer-nav {
+    display: block
+  }
+}
+
+.Footer-link {
+  margin-right: 16px;
+}

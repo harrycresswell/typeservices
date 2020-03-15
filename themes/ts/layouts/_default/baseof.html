@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}">
+    <meta property="og:description" name="description" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $.Site.BaseURL }}img/favicon.ico">
+    <meta property="og:type" content="website" />
+    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{.}}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+    <!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="c60dc1e9be844be29f0fb5525b9afe6f"/>
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="bFICG7Sjq2n57LbNl-jD_OezOVx1XnG2xZRtsLxrsHY" />
+    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ $.Site.BaseURL }}img/favicon.ico" type="image/x-icon">
+    <!-- Styles -->
+    {{ if .Site.IsServer }}
+      <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
+      {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
+      <!-- Load main.css-->
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ else }}
+      <!-- Set target path -->
+      {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
+        <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and hash -->
+      {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
+      <!-- Load main.css and authenticate hashed file -->
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+    {{ end }}
+    <!-- RSS -->
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  </head>
+  <body>
+
+    <div id="main" class="Main">
+
+    {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+    {{ block "main" . }}{{end}}
+
+    {{ block "newsletter" . }}{{ partial "newsletter" . }}{{end}}
+
+    </div>
+
+    {{ partial "mobile-menu.html" . }}
+
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+    {{ block "scripts" . }}{{ partial "scripts" . }}{{end}}
+
+  </body>
+</html>
