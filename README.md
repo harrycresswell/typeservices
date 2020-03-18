@@ -1,6 +1,6 @@
 # Typeservices.co
 
-A Hugo starter project and theme used for [harrycresswell.com](https://harrycresswell.com/).
+A Hugo starter project and theme used for [typeservices.co](https://typeservices.co/). A type design project by Harry Cresswell.
 
 ## Features
 
