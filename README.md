@@ -1,129 +1,83 @@
-# Victor Hugo
+# Typeservices.co
 
-**A Hugo boilerplate for creating truly epic websites**
+A Hugo starter project and theme used for [harrycresswell.com](https://harrycresswell.com/).
 
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) + [Webpack](https://webpack.js.org/) as your asset pipeline.
+## Features
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+- [Hugo](https://gohugo.io/)
+- [Hugo pipes](https://gohugo.io/hugo-pipes/) for SCSS, Sourcemaps, PostCSS Autoprefixer and JS
+- [Lazysizes.js](https://github.com/aFarkas/lazysizes) for image lazy loading
+- Responsive image with [Cloudinary](https://cloudinary.com/documentation/responsive_images#automating_responsive_images_with_javascript)
+- Minimal dependencies
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+Read more about it in [How I built this site](https://harrycresswell.com/build/).
 
-## Usage
-
-### Prerequisites
+## Prerequisites
 
 You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
 
-Next step, clone this repository and run:
+## Installation
 
-```bash
+Clone this repository:
+
+```
+git clone https://github.com/harrycresswell/harry.git
+```
+
+Then run:
+
+```
 npm install
 ```
 
-This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
+This will install the necessary dependencies.
 
-### Development
+## Local development
 
-While developing your website, use:
+To start a local development server at at `https://localhost:1313/` run:
 
-```bash
+```
 npm start
 ```
 
-or
+This is a simple NPM Script which `hugo server --disableFastRender`.
 
-```bash
-gulp server
-```
+## Production build
 
-or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
-
-```bash
-npm run start-preview
-```
-
-or
-
-```bash
-gulp server-preview
-```
-
-Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
-
-### Static build
-
-To build a static version of the website inside the `/dist` folder, run:
-
-```bash
-npm run build
-```
-
-To get a preview of posts or articles not yet published, run:
-
-```bash
-npm run build-preview
-```
-
-See [package.json](package.json#L7) or the included gulp file for all tasks.
-
-## Structure
+Whe your ready to build a production ready site, update the `baseUrl` inside `config.toml` then run:
 
 ```
-|--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
-|  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
-|  |  |--index.html    // The index page
-|  |--static           // Files in here ends up in the public folder
-|--src                 // Files that will pass through the asset pipeline
-|  |--css              // CSS files in the root of this folder will end up in /css/...
-|  |--js               // app.js will be compiled to /app.js with babel
+npm run clean && npm run build
 ```
 
-## Basic Concepts
+This will remove the `/public` folder and run a fresh build ready for production.
 
-You can read more about Hugo's template language in their documentation here:
+## Basic concepts
 
-https://gohugo.io/templates/overview/
+A few of the basic concepts to get the most out of using this theme.
 
-The most useful page there is the one about the available functions:
+### Adding Content
 
-https://gohugo.io/templates/functions/
+Create a new markdown file in the `./content/articles` directory:
 
-For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
+```
+hugo new articles/my-new-article.md
+```
 
-Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
-will end up being available as `/favicon.ico` and so on...
+Create a new page in the `./content/page` directory:
 
-The `src/js/app.js` file is the entrypoint for webpack and will be built to `/dist/app.js`.
+```
+hugo new page/my-new/page.md
+```
 
-You can use **ES6** and use both relative imports or import libraries from npm.
+Follow the same steps for notes and projects.
 
-Any CSS file directly under the `src/css/` folder will get compiled with [PostCSS Next](http://cssnext.io/)
-to `/dist/css/{filename}.css`. Import statements will be resolved as part of the build.
+### Writing Sass
 
-## Environment variables
+Write your **Sass** inside `./assets/scss`.
 
-To separate the development and production *- aka build -* stages, all gulp tasks run with a node environment variable named either `development` or `production`.
+With the server running (`npm start`) Hugo will watch your Sass for changes, then pipe them to `./public/css/main.css` and reload the browser.
 
-You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
+### Making layout changes
 
-    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
-
-All tasks starting with *build* set the environment variable to `production` - the other will set it to `development`.
-
-## Deploying to Netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
-
-
-## Enjoy!! 😸
+To make changes to the layout head to `./themes/hc-starter` where you will find `/layouts`. Inside there you will find templates for partials, shortcodes and taxonomies.
