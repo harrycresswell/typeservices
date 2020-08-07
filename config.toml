@@ -25,10 +25,10 @@ googleAnalytics = "UA-84736644-3"
   # Set Cloudinary URL for image hosting
   cloudinary_url = "https://res.cloudinary.com/harrycresswell/image/upload"
   # Set Social media links
-  socialTwitter = "https://twitter.com/climatype"
-  socialPintrest = "https://www.pinterest.co.uk/halcresswell/climatype/"
-  socialInstagram = "https://www.instagram.com/climatype/"
-  socialBehance = "https://www.behance.net/climatype"
+  socialTwitter = "https://twitter.com/typeservices"
+  socialPintrest = "https://www.pinterest.co.uk/halcresswell/typeservices/"
+  socialInstagram = "https://www.instagram.com/typeservices/"
+  socialBehance = "https://www.behance.net/typeservices"
 
 [author]
   name = "Harry Cresswell"
