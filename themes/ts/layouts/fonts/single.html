@@ -1,15 +1,8 @@
 {{ define "main" }}
-
-  <section class="Container">
-      <article class="Font" id="content">
-          <header class="FontHeader">
-            <h1 class="FontHeader-title">{{ .Title }}</h1>
-          
-          </header>
-
-          {{ .Content }}
-
-      </article><!--/.Content -->
-  </section><!--/.Container -->
-
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+    {{ .Content }}
+  </article>
 {{ end }}

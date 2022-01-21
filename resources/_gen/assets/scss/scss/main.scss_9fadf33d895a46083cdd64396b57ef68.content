@@ -571,17 +571,6 @@ a .Button {
   margin-right: 16px; }
 
 /*------------------------------------*\
-    #COMPONENTS: HERO
-\*------------------------------------*/
-/**
- * Component Block
- */
-.Hero {
-  margin: 0 auto;
-  padding: 3rem 4%;
-  text-align: center; }
-
-/*------------------------------------*\
     #COMPONENTS: IMAGE
 \*------------------------------------*/
 /**

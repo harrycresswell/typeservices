@@ -5,13 +5,3 @@
 {{ $scripts := slice $lazysizes $custom | resources.Concat "app.js" | minify | fingerprint }}
 <!-- Load app.js and authenticate of hashed file -->
 <script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}" media="screen"></script>
-
-<script>
-    var cl = cloudinary.Cloudinary.new({
-      cloud_name: "harrycresswell"
-    });
-    
-    cl.responsive();
-</script>
-
-{{ template "_internal/google_analytics.html" . }}
