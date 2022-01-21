@@ -4,7 +4,6 @@
 
 a {
   color: $color-link;
-  text-decoration: none;
   transition: color .2s ease-in-out;
 
   &:hover {
@@ -24,4 +23,9 @@ a {
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out
   }
+}
+
+:focus {
+  outline: 2px dotted;
+  outline-offset: 4px;
 }

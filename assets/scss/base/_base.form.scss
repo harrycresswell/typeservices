@@ -6,35 +6,28 @@
  * Component Block
  */
 
-//.Form {}
 
-.Form-label {
+label {
   display: block;
-  @include margin-bottom(0.5);
+  margin-bottom: .5rem;
 }
 
 ::placeholder {
   color: $color-lighter;
 }
 
-/**
-  * Component Element
-  */
-
-.Form-input,
-.Form-textarea,
-.Form-select {
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
   background: $color-lightest;
   border: solid 2px $color-lightest;
   border-radius: 0;
-  font-size: 0.8rem;
-  height: 56px;
-  @include margin-top(0.25);
+  padding: 1rem;
   outline: none;
   outline-style: none;
-  padding: 0 16px;
   position: relative;
-  transition: all .2s;
   width: 100%;
   -webkit-appearance: none;
 
@@ -43,12 +36,19 @@
     border: 2px solid $color-link;
     outline: 4px solid lighten($color-link, 70%);
     outline-offset: 0;
-    transition: all .2s;
   }
 
 }
 
-.Form-select {
+select {
+  background: $color-lightest;
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline-style: none;
+  height: 64px;
+  width: 100%;
 
   &:after {
     color: #000;
@@ -61,15 +61,9 @@
     width: 14px;
 
   }
+
 }
 
-.Form-textarea {
-  font-size: 0.8rem;
+textarea {
   min-height: 96px;
-  padding-top: 16px;
-}
-
-
-.Form-button {
-  @include margin-bottom(1);
 }

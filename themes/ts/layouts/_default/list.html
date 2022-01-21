@@ -4,25 +4,21 @@
     <h1>{{ .Title }}</h1>
   </header>
 
-  <section class="Container">
-    <div class="PostList Grid Grid--3">
-      {{ range .Data.Pages }}
-        <article class="PostListItem">
-            <div class="PostListItem-image">
-              <div class="PostListItem-imageRatio">
-                <a href="{{ .Permalink }}">
-                  <img
-                    data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
-                    class="cld-responsive Lightbox lazyload">
-                </a>
-              </div>
+  <section class="PostList Grid Grid--3">
+    {{ range .Data.Pages }}
+      <article class="PostListItem">
+        <a href="{{ .Permalink }}">
+          <figure class="PostListItem-image">
+            <div class="PostListItem-imageRatio">
+              <img
+                data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
+                class="lazyload">
             </div>
-            <h3 class="PostListItem-title">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h3>
-        </article>
-      {{ end }}
-    </div>
+          </figure>
+          <h3 class="PostListItem-title">{{ .Title }}</h3>
+        </a>
+      </article>
+    {{ end }}
   </section>
 
 {{ end }}

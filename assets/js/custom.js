@@ -1,78 +1,45 @@
-// JS Goes here - ES6 supported
-
-// Animate Hamburger
-$(document).ready(function(){
-  $(".Hamburger").click(function(){
-    $(this).toggleClass("is-active");
+// Drawer side navigation for small devices
+function initDrawer() {
+  const nav = document.querySelector('.Drawer-nav');
+  const navList = document.querySelector('.Drawer-menu');
+  const overlay = document.querySelector('.Drawer-overlay');
+  const content = document.querySelectorAll('.SiteHead, .Main, .Footer');
+  const burger = document.querySelector('.js-burger');
+  const subMenu = document.querySelectorAll('.Drawer-menuItem--hasChildren > a');
+  const LangSwitch = document.querySelector('.LangSwitch--drawer');
+  
+  burger.addEventListener('click', function () {
+    let burgerExpanded = burger.getAttribute('aria-expanded') === 'true' || false;
+    this.setAttribute('aria-expanded', !burgerExpanded);
+    this.classList.toggle('is-active');
+    nav.classList.toggle('is-visible');
+    content.forEach(e => {
+      e.classList.toggle('is-shiftedLeft');
+    });
+    overlay.classList.toggle('is-visible');
+    navList.classList.toggle('hidden');
+    LangSwitch.classList.toggle('hidden');
   });
-});
+  
+  overlay.addEventListener('click', function () {
+    let burgerExpanded = burger.getAttribute('aria-expanded') === 'true' || false;
+    burger.setAttribute('aria-expanded', !burgerExpanded);
+    burger.classList.remove('is-active');
+    nav.classList.remove('is-visible');
+    content.forEach(e => {
+      e.classList.remove('is-shiftedLeft');
+    });
+    this.classList.remove('is-visible');
+    navList.classList.add('hidden');
+  });
+  
+  subMenu.forEach(e => {
+    e.addEventListener('click', function (e) {
+      e.preventDefault();
+        this.parentElement.classList.toggle('is-active')
+        this.nextElementSibling.classList.toggle('is-visible')
+    });
+  });
+}
 
-
-/* Mobile menu */
-
-// set up namespace
-var ab = ab || {};
-
-$(function () {
-    'use strict';
-
-    // Mobile menu toggle functionality
-    ab.mobileMenu = (function () {
-      'use strict';
-
-      var init = function() {
-
-         /***
-          * Run this code when the .toggle-menu link has been tapped
-          * or clicked
-          */
-         $( '.Hamburger' ).on( 'touchstart click', function(e) {
-          e.preventDefault();
-          $(this).toggleClass("active");
-
-          var $body = $( 'body' ),
-              $page = $( '.Main' ),
-              $menu = $( '.Mobile-menu' ),
-
-              /* Cross browser support for CSS "transition end" event */
-              transitionEnd = 'transitionend webkitTransitionEnd otransitionend MSTransitionEnd';
-
-          /* When the toggle menu link is clicked, animation starts */
-          $body.addClass( 'animating' );
-
-          /***
-           * Determine the direction of the animation and
-           * add the correct direction class depending
-           * on whether the menu was already visible.
-           */
-          if ( $body.hasClass( 'menu-visible' ) ) {
-           $body.addClass( 'right' );
-          } else {
-           $body.addClass( 'left' );
-          }
-
-          /***
-           * When the animation (technically a CSS transition)
-           * has finished, remove all animating classes and
-           * either add or remove the "menu-visible" class
-           * depending whether it was visible or not previously.
-           */
-          $page.on( transitionEnd, function() {
-           $body
-            .removeClass( 'animating left right' )
-            .toggleClass( 'menu-visible' );
-
-           $page.off( transitionEnd );
-          } );
-         } );
-      }
-
-      return {
-            init: init
-        };
-
-    }());
-
-    // initialise modules
-    ab.mobileMenu.init();
-});
+initDrawer();
