@@ -1,16 +1,8 @@
-<!-- Load jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>
-  // load jQuery from a local path if the CDN is unavailable
-  (window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>'));
-</script>
-
 <!-- Load JS files independently -->
-{{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}
 {{ $lazysizes := resources.Get "js/lazysizes.js" }}
 {{ $custom := resources.Get "js/custom.js" }}
 <!-- Concat JS and generate app.js, force cache refresh -->
-{{ $scripts := slice $cloudinary $lazysizes $custom | resources.Concat "app.js" | minify | fingerprint }}
+{{ $scripts := slice $lazysizes $custom | resources.Concat "app.js" | minify | fingerprint }}
 <!-- Load app.js and authenticate of hashed file -->
 <script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}" media="screen"></script>
 

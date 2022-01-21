@@ -1,31 +1,28 @@
 {{ define "main" }}
 
-  <section class="Container PostList">
-  {{ range .Data.Pages }}
-      {{ if isset .Params "featuredimage" }}
-      <div class="PostList-item">
-          <div class="Image">
-            <a href="{{ .Permalink }}">
-              <span class="u-visually-hidden">{{ .Title }}</span>
-              <img
-                data-src="{{ .Site.Params.cloudinary_url }}/f_auto,q_auto,w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
-                class="cld-responsive Lightbox" alt="{{ .Title }}">
-            </a>
-          </div>
-          <h3 class="PostList-title">
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </h3>
-          {{else}}
-          <h3 class="PostHeader-title">
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </h3>
-          {{ end }}
-          <div class="PostList-meta">
-              <time class="PostMeta-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time> —
-              {{ partial "blog/tags.html" . }}
-          </div>
-      </div>
-  {{ end }}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  <section class="Container">
+    <div class="PostList Grid Grid--3">
+      {{ range .Data.Pages }}
+        <article class="PostListItem">
+            <div class="PostListItem-image">
+              <div class="PostListItem-imageRatio">
+                <a href="{{ .Permalink }}">
+                  <img
+                    data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
+                    class="cld-responsive Lightbox lazyload">
+                </a>
+              </div>
+            </div>
+            <h3 class="PostListItem-title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+        </article>
+      {{ end }}
+    </div>
   </section>
 
 {{ end }}

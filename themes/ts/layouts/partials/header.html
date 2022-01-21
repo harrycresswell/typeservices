@@ -1,20 +1,18 @@
-<section class="Header">
-    <div class="Container">
-        <div class="Flex-row Flex--nr">
-            <div class="Flex-column">
-                <div class="Header-title">
-                    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-                </div>
-            </div><!-- /.Flex-column -->
-            <div class="Flex-column u-tr">
-                <nav class="Header-nav">
-                    {{ $currentPage := . }}
-                    {{ range .Site.Menus.main }}
-                    <a class="Header-link{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
-                    {{ end }}
-                </nav>
-                {{ partial "hamburger.html" . }}
-            </div><!-- /.Flex-column -->
-        </div><!-- /.Flex-row -->
-    </div><!--/.Container -->
-</section><!--/.Header -->
+<header class="Header">
+	<div class="Flex-row Flex--nr">
+		<div class="Flex-column">
+			<div class="Header-title">
+					<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+			</div>
+		</div><!-- /.Flex-column -->
+		<div class="Flex-column u-tr">
+			<nav class="Header-nav">
+					{{ $currentPage := . }}
+					{{ range .Site.Menus.main }}
+					<a class="Header-link{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
+					{{ end }}
+			</nav>
+			{{ partial "hamburger.html" . }}
+		</div><!-- /.Flex-column -->
+	</div><!-- /.Flex-row -->
+</header><!--/.Header -->
