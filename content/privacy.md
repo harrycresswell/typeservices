@@ -6,7 +6,7 @@ date: 2018-07-02T15:17:12+01:00
 
 ### Scope
 
-This privacy policy describes how Type Services handles your personal information and applies only to personal information collected through this website or via the Gumroad marketplace.
+This privacy policy describes how Type Services handles your personal information and applies only to personal information collected through this website or via Gumroad, which I use to sell fonts.
 
 ### Information collected
 

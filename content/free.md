@@ -1,9 +1,8 @@
 ---
-title: "Free Fonts"
+title: "Free fonts"
 slug: "free-fonts"
 date: 2018-07-02T15:15:29+01:00
 ---
-Who doesn’t like free fonts?!
 
 All Type Services fonts are currently available for free.
 

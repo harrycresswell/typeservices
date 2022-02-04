@@ -1,3 +1,3 @@
 ---
-title: Friendly fonts for the future
+title: Free and custom hand drawn fonts.
 ---

@@ -11,13 +11,13 @@ Hand painted using oil pastel, each glyph is full of character and unique textur
 
 {{< button link="https://gum.co/risque" text="Download it free" >}}
 
-{{< cld src="v1531128162/typeservices/type-services-risque-01.jpg" alt="Type Services Risqué" >}}
-{{< cld src="v1531128163/typeservices/type-services-risque-02.jpg" alt="Type Services Risqué" >}}
-{{< cld src="v1531128160/typeservices/type-services-risque-03.jpg" alt="Type Services Risqué" >}}
-{{< cld src="v1531128159/typeservices/type-services-risque-04.jpg" alt="Type Services Risqué" >}}
-{{< cld src="v1531128157/typeservices/type-services-risque-05.jpg" alt="Type Services Risqué" >}}
-{{< cld src="v1531128157/typeservices/type-services-risque-06.jpg" alt="Type Services Risqué" >}}
-{{< cld src="v1531128160/typeservices/type-services-risque-07.jpg" alt="Type Services Risqué" >}}
+{{< cld src="v1531128162/typeservices/type-services-risque-01.jpg" alt="Type Services Risqué" ratio="landscape" >}}
+{{< cld src="v1531128163/typeservices/type-services-risque-02.jpg" alt="Type Services Risqué" ratio="portrait" >}}
+{{< cld src="v1531128160/typeservices/type-services-risque-03.jpg" alt="Type Services Risqué" ratio="portrait" >}}
+{{< cld src="v1531128159/typeservices/type-services-risque-04.jpg" alt="Type Services Risqué" ratio="landscape" >}}
+{{< cld src="v1531128157/typeservices/type-services-risque-05.jpg" alt="Type Services Risqué" ratio="landscape"  >}}
+{{< cld src="v1531128157/typeservices/type-services-risque-06.jpg" alt="Type Services Risqué" ratio="square" >}}
+{{< cld src="v1531128160/typeservices/type-services-risque-07.jpg" alt="Type Services Risqué" ratio="wide" >}}
 
 ### Includes:
 

@@ -4,18 +4,18 @@
     <h1>{{ .Title }}</h1>
   </header>
 
-  <section class="PostList Grid Grid--3">
+  <section class="grid">
     {{ range .Data.Pages }}
-      <article class="PostListItem">
+      <article>
         <a href="{{ .Permalink }}">
-          <figure class="PostListItem-image">
-            <div class="PostListItem-imageRatio">
+          <figure>
+            <div class="aspect-ratio-square">
               <img
                 data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale/{{ .Params.listimage }}"
                 class="lazyload">
             </div>
           </figure>
-          <h3 class="PostListItem-title">{{ .Title }}</h3>
+          <h2 class="h3 mt20">{{ .Title }}</h2>
         </a>
       </article>
     {{ end }}

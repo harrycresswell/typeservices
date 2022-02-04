@@ -4,11 +4,7 @@ slug: "about"
 date: 2018-07-02T15:16:11+01:00
 ---
 
-Type Services is a small type design practice established by [Harry Cresswell](https://harrycresswell.com/), based in Hamburg, Germany. Currently the project explores texture and imperfection in hand drawn typography.
-
-I’m interested in designing free, retail and custom typefaces for a wide range of creative application.
-
-I’m currently in the process of designing my first premium typeface, a utility offering called TS Sans. Though this one is paid, I will continue to provide a collection of display fonts free of charge.
+Type Services is the type design practice of [Harry Cresswell](https://harrycresswell.com/). Currently the project explores texture and imperfection in hand drawn typography.
 
 ### Credits
 

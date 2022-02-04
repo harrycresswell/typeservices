@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    #COMPONENTS: RATIO
+\*------------------------------------*/
+
+/**
+ * A utility that provides you with a predictable aspect ratio
+ *
+ * 16:9 = ratio wide || 9 ÷ 16 = 0.56 * 100 = 56.25%
+ * 1:1 = ratio square || 1 ÷ 1 = 1 * 100 = 100%
+ * 3:2 = ratio landscape classic ||  2 ÷ 3 = 0.67 * 100 = 67%
+ * 4:3 = ratio landscape || 3 ÷ 4 = 0.75 * 100 = 75%
+ * 3:4 = ratio portrait || 4 ÷ 3 = 1.33 * 100 = 133%
+ * 5:7 = ratio portrait || 7 ÷ 5 = 1.4 * 100 = 140%
+ *
+ * See for more: https://css-tricks.com/aspect-ratio-boxes/
+ */
+
+[class*='ratio-'] {
+  background-color: var(--color-darker);
+  display: block;
+  position: relative;
+}
+
+[class*='ratio-']>* {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aspect-ratio-wide {
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
+}
+
+.aspect-ratio-square {
+  padding-bottom: 100%;
+  /* 1:1 Aspect Ratio */
+}
+
+.aspect-ratio-landscape {
+  padding-bottom: 67%;
+  /* 3:2 Aspect Ratio */
+}
+
+.aspect-ratio-portrait {
+  padding-bottom: 140%;
+  /* 5:7 Aspect Ratio */
+}

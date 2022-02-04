@@ -46,7 +46,7 @@ googleAnalytics = "UA-84736644-3"
   weight = 10
 
 [[menu.main]]
-  name = "Free Fonts"
+  name = "Free fonts"
   url = "/free-fonts/"
   weight = 15
 
