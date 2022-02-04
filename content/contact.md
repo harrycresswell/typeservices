@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+slug: "contact"
 date: 2018-07-02T15:17:46+01:00
 labelname: What’s your name?
 labelemail: What’s your email?

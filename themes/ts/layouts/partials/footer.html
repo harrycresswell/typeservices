@@ -1,9 +1,9 @@
 <footer class="flex jcb wrapper">
 		{{ partial "social.html" . }}
-		<nav>
+		<nav class="Nav">
 			{{ $currentPage := . }}
 			{{ range .Site.Menus.footer }}
-			<a class="{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
+			<a class="Nav-link {{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
 			{{ end }}
 		</nav>
 </footer>

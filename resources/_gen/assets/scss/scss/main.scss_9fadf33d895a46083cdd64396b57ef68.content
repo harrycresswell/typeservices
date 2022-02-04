@@ -116,8 +116,7 @@ h5,
 h6 {
   color: #2f2f2f;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 700;
-  letter-spacing: -.015em; }
+  font-weight: 700; }
 
 h1 {
   font-size: 2.0736rem;
@@ -349,16 +348,6 @@ textarea {
   min-height: 96px; }
 
 /*------------------------------------*\
-    #LAYOUTS: CONTAINER
-\*------------------------------------*/
-/**
- * Component Block
- */
-.Container {
-  margin: 0 auto;
-  padding: 4%; }
-
-/*------------------------------------*\
     #LAYOUTS: GRID
 \*------------------------------------*/
 /**
@@ -447,21 +436,13 @@ a .Button {
   left: 1rem; }
 
 /*------------------------------------*\
-    #COMPONENTS: HEADER
+    #COMPONENTS: HERO
 \*------------------------------------*/
 /**
  * Component Block
  */
-.Header-nav {
-  display: none; }
-
-@media (min-width: 37.5em) {
-  .Header-nav {
-    display: block; } }
-
-.Header-link {
-  display: inline;
-  margin-left: 16px; }
+.Hero {
+  margin: 6rem 0; }
 
 /*------------------------------------*\
     #COMPONENTS: FOOTER
@@ -555,105 +536,21 @@ a .Button {
   transform: translateY(-8px) rotate(-45deg); }
 
 /*------------------------------------*\
-    #COMPONENTS: MOBILE MENU
+    #COMPONENTS: NEWSLETTER
 \*------------------------------------*/
 /**
  * Component Block
  */
-.Mobile-menu {
-  background: #fff;
-  border-left: solid 1px #2f2f2f;
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 320px;
-  height: 10000px;
-  padding-top: 28px;
-  z-index: 1;
-  /* Make sure the z-index is lower than the .page-container */ }
-
-.Mobile-menu-link {
-  color: #2f2f2f;
-  display: block;
-  margin-top: 1.5rem;
-  margin-left: 3rem;
-  max-width: 170px; }
-  @media screen and (min-width: 48em) {
-    .Mobile-menu-link {
-      margin-top: 1.7rem; } }
-  @media screen and (min-width: 48em) {
-    .Mobile-menu-link {
-      margin-left: 3.4rem; } }
-.Main {
-  background: #fff;
-  position: relative;
-  transform: translate3d(0, 0, 0);
-  /* X, Y, Z */
-  -webkit-transform: translate3d(0, 0, 0);
-  z-index: 2; }
-
-.Main, .Mobile-menu {
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  overflow: hidden; }
-
-/* Animating mobile menu */
-/* Show the menu when animating or visible */
-.animating .Mobile-menu, .menu-visible .Mobile-menu {
-  display: block; }
-
-/***
- * If the animating class is present then apply
- * the CSS transition to .page-container over 250ms.
- */
-.animating .Main {
-  transition: transform .25s ease-in-out;
-  -webkit-transition: -webkit-transform .25s ease-in-out; }
-
-/***
- * If the left class is present then transform
- * the .page-container element 240px to the left.
- */
-.animating.left .Main {
-  transform: translate3d(-380px, 0, 0);
-  -webkit-transform: translate3d(-320px, 0, 0); }
-
-/***
- * If the right class is present then transform
- * the .page-container element 240px to the right.
- */
-.animating.right .Main {
-  transform: translate3d(320px, 0, 0);
-  -webkit-transform: translate3d(320px, 0, 0); }
-
-/***
- * If the menu-visible class is present then
- * shift the .page-container 240px from the right edge
- * via position: absolute to keep it in the
- * open position. When .animating, .left and
- * .right classes are not present the CSS
- * transform does not apply to .page-container.
- */
-.menu-visible .Main {
-  right: 320px; }
-
-/*------------------------------------*\
-    #COMPONENTS: MAILING-LIST
-\*------------------------------------*/
-/**
- * Component Block
- */
-.NewsletterForm {
+.Newsletter {
   display: flex;
   flex-direction: column; }
 
 @media (min-width: 48em) {
-  .NewsletterForm {
+  .Newsletter {
     flex-direction: row;
     align-items: end;
     gap: 1rem; }
-  .NewsletterForm-field {
+  .Newsletter-field {
     flex: 1; } }
 
 /*------------------------------------*\
@@ -725,6 +622,10 @@ a .Button {
   .Post a:hover {
     color: #542bff;
     border-bottom: solid 1px #542bff; }
+
+.Nav-link {
+  display: inline;
+  margin-left: 16px; }
 
 /*------------------------------------*\
     #LAYOUTS: FLEX

@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #COMPONENTS: MAILING-LIST
+    #COMPONENTS: NEWSLETTER
 \*------------------------------------*/
 
 
@@ -7,24 +7,22 @@
  * Component Block
  */
 
-//.Newsletter {}
 
-
-.NewsletterForm {
+.Newsletter {
   display: flex;
   flex-direction: column;
 }
 
 
 @include breakpoint(md) {
-  .NewsletterForm {
+  .Newsletter {
     flex-direction: row;
     align-items: end;
     gap: 1rem;
   }
 
 
-  .NewsletterForm-field {
+  .Newsletter-field {
     flex: 1;
   }
 }

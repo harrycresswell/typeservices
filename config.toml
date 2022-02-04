@@ -14,7 +14,6 @@ googleAnalytics = "UA-84736644-3"
 [permalinks]
   articles = "/:section/:slug/"
   reading = "/:section/:slug/"
-  page = "/:title/"
 
 [params]
   keywords = "Hand Drawn Type, Typography Design, Type Foundry, Typefaces, Fonts"

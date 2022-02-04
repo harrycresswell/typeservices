@@ -1,7 +1,6 @@
 <!-- Load JS files independently -->
 {{ $lazysizes := resources.Get "js/lazysizes.js" }}
-{{ $custom := resources.Get "js/custom.js" }}
 <!-- Concat JS and generate app.js, force cache refresh -->
-{{ $scripts := slice $lazysizes $custom | resources.Concat "app.js" | minify | fingerprint }}
+{{ $scripts := $lazysizes | minify | fingerprint }}
 <!-- Load app.js and authenticate of hashed file -->
 <script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}" media="screen"></script>

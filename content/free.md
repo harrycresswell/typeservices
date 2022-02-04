@@ -1,5 +1,6 @@
 ---
 title: "Free Fonts"
+slug: "free-fonts"
 date: 2018-07-02T15:15:29+01:00
 ---
 Who doesn’t like free fonts?!
