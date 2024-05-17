@@ -1,0 +1,677 @@
+@charset "UTF-8";
+/*
+  You can use import statements to include partials:
+ */
+/*------------------------------------*\
+    #ABSTRACTS: COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+    #ABSTRACTS: BREAKPOINTS
+\*------------------------------------*/
+/**
+ * Breakpoints
+ *
+ *
+$base-font-size = 100%/16px
+  *
+*/
+/**
+* Mobile-first styles FTW
+*
+Example:
+*/
+aside.primary {
+  /* Regular content */ }
+  @media (min-width: 37.5em) {
+    aside.primary {
+      /* responsive content */ } }
+/*------------------------------------*\
+    #ABSTRACTS: TYPOGRAPHY
+\*------------------------------------*/
+/*
+* Courtesy of https://blog.codepen.io/2016/10/31/fluid-type-blogs/ and https://codepen.io/MadeByMike/pen/VvwqvW
+*/
+/*------------------------------------*\
+    #ABSTRACTS: SPACING
+\*------------------------------------*/
+/*------------------------------------*\
+    #BASE: BOX-SIZING
+\*------------------------------------*/
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html,
+body {
+  margin: 0; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: inline-block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+figure {
+  margin: 0; }
+
+/*------------------------------------*\
+    #BASE: BODY
+\*------------------------------------*/
+html {
+  font-feature-settings: "calt", "liga", "hist", "onum", "pnum"; }
+  html {
+    font-size: 16px; }
+    @media screen and (min-width: 320px) {
+      html {
+        font-size: calc(16px + 3 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      html {
+        font-size: 19px; } }
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.7rem;
+  font-style: normal; }
+
+p {
+  max-width: 675px;
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    p {
+      margin-bottom: 1.7rem; } }
+/*------------------------------------*\
+    #BASE: HEADINGS
+\*------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2f2f2f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700; }
+
+h1,
+.h1 {
+  font-size: 2.0736rem;
+  line-height: 1;
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem; }
+  h1,
+  .h1 {
+    font-size: 27.648px; }
+    @media screen and (min-width: 320px) {
+      h1,
+      .h1 {
+        font-size: calc(27.648px + 46.47052741 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      h1,
+      .h1 {
+        font-size: 74.11852741px; } }
+  @media screen and (min-width: 48em) {
+    h1,
+    .h1 {
+      margin-top: 5.1rem; } }
+  @media screen and (min-width: 48em) {
+    h1,
+    .h1 {
+      margin-bottom: 1.7rem; } }
+h2,
+.h2 {
+  font-size: 1.728rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem; }
+  h2,
+  .h2 {
+    font-size: 23.04px; }
+    @media screen and (min-width: 320px) {
+      h2,
+      .h2 {
+        font-size: calc(23.04px + 21.422224 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      h2,
+      .h2 {
+        font-size: 44.462224px; } }
+  @media screen and (min-width: 48em) {
+    h2,
+    .h2 {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    h2,
+    .h2 {
+      margin-bottom: 1.7rem; } }
+h3,
+.h3 {
+  font-size: 1.44rem;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem; }
+  h3,
+  .h3 {
+    font-size: 19.2px; }
+    @media screen and (min-width: 320px) {
+      h3,
+      .h3 {
+        font-size: calc(19.2px + 7.472 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      h3,
+      .h3 {
+        font-size: 26.672px; } }
+  @media screen and (min-width: 48em) {
+    h3,
+    .h3 {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    h3,
+    .h3 {
+      margin-bottom: 0.85rem; } }
+h4,
+.h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    h4,
+    .h4 {
+      margin-top: 1.7rem; } }
+  @media screen and (min-width: 48em) {
+    h4,
+    .h4 {
+      margin-bottom: 0.85rem; } }
+/*------------------------------------*\
+    #BASE: IMAGES
+\*------------------------------------*/
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure {
+  margin: 0; }
+
+figure > img {
+  display: block; }
+
+figcaption {
+  color: #888;
+  font-size: 70%; }
+
+/*------------------------------------*\
+    #BASE: LINKS
+\*------------------------------------*/
+a {
+  color: #222;
+  transition: color .2s ease-in-out; }
+  a:hover {
+    color: black;
+    text-decoration: underline; }
+  a:visited {
+    border-bottom: 1px solid #222;
+    text-decoration: none; }
+  a:before {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+
+:focus {
+  outline: 2px dotted;
+  outline-offset: 4px; }
+
+/*------------------------------------*\
+    #BASE: LISTS
+\*------------------------------------*/
+ul, ol {
+  color: #2f2f2f;
+  list-style-position: outside;
+  list-style-type: round;
+  max-width: 675px;
+  padding-left: 0; }
+
+ul + p {
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    ul + p {
+      margin-top: 1.7rem; } }
+/*------------------------------------*\
+    #BASE: QUOTES
+\*------------------------------------*/
+blockquote {
+  color: #222;
+  font-size: 1.728rem;
+  line-height: 1.3;
+  margin-left: 48px;
+  max-width: 32em;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  blockquote {
+    font-size: 19.2px; }
+    @media screen and (min-width: 320px) {
+      blockquote {
+        font-size: calc(19.2px + 7.472 * ((100vw - 320px) / 355)); } }
+    @media screen and (min-width: 675px) {
+      blockquote {
+        font-size: 26.672px; } }
+  @media screen and (min-width: 48em) {
+    blockquote {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    blockquote {
+      margin-bottom: 3.4rem; } }
+  blockquote p {
+    margin-bottom: 0;
+    min-width: 90%; }
+  blockquote cite {
+    font-size: 60%;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+code,
+kbd,
+samp {
+  background: #f5f5f5;
+  color: #555;
+  font-size: 0.9rem;
+  padding: .125rem 0.35rem; }
+
+pre {
+  background: #f5f5f5;
+  font-size: 0.9rem;
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-wrap: normal;
+  padding: 3%; }
+
+/*------------------------------------*\
+    #OBJECTS: FORM
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+label {
+  display: block;
+  margin-bottom: .5rem; }
+
+::placeholder {
+  color: #888; }
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  background: #f5f5f5;
+  border: solid 2px #f5f5f5;
+  border-radius: 0;
+  padding: 1rem;
+  outline: none;
+  outline-style: none;
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none; }
+  input:focus, input:active,
+  textarea:focus,
+  textarea:active,
+  select:focus,
+  select:active {
+    border: 2px solid #222;
+    outline: 4px solid #d5d5d5;
+    outline-offset: 0; }
+
+select {
+  background: #f5f5f5;
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline-style: none;
+  height: 64px;
+  width: 100%; }
+  select:after {
+    color: #000;
+    content: '▾';
+    display: block;
+    height: 14px;
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    width: 14px; }
+
+textarea {
+  min-height: 96px; }
+
+/*------------------------------------*\
+    #OBJECTS: BUTTON
+\*------------------------------------*/
+.Button-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 48em) {
+    .Button-container {
+      margin-top: 3.4rem; } }
+  @media screen and (min-width: 48em) {
+    .Button-container {
+      margin-bottom: 3.4rem; } }
+/**
+ * Component Block
+ */
+.Button {
+  border-width: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  background: #2f2f2f;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+  font-size: .9rem;
+  outline: none;
+  outline-style: none;
+  padding: 1rem;
+  text-align: left;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  width: 100%; }
+  .Button:hover {
+    color: #fff;
+    text-decoration: none; }
+
+.Button:hover {
+  background-color: #2f2f2f;
+  box-shadow: 0 10px 28px rgba(47, 47, 47, 0.3);
+  transform: translateY(-2px); }
+
+a .Button {
+  text-decoration: none; }
+
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+.skip-link:focus {
+  background-color: var(#fff);
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  left: 1rem; }
+
+/*------------------------------------*\
+    #COMPONENTS: HERO
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Hero {
+  margin: 6rem 0; }
+
+/*------------------------------------*\
+    #COMPONENTS: FOOTER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Footer {
+  margin: 0 auto;
+  font-weight: 500; }
+
+.Footer-nav {
+  display: none; }
+
+.Footer-copy {
+  display: inline-block; }
+
+@media (min-width: 37.5em) {
+  .Footer-nav {
+    display: block; } }
+
+.Footer-link {
+  margin-right: 16px; }
+
+/*------------------------------------*\
+    #COMPONENTS: IMAGE
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Image {
+  margin-top: 2.25rem; }
+  @media screen and (min-width: 48em) {
+    .Image {
+      margin-top: 2.55rem; } }
+  .Image figcaption {
+    margin-top: 0.375rem; }
+    @media screen and (min-width: 48em) {
+      .Image figcaption {
+        margin-top: 0.425rem; } }
+.Image + p {
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    .Image + p {
+      margin-top: 1.7rem; } }
+.Image + .Image {
+  margin-top: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    .Image + .Image {
+      margin-top: 0.85rem; } }
+/*------------------------------------*\
+    #COMPONENTS: NEWSLETTER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Newsletter {
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 48em) {
+  .Newsletter {
+    flex-direction: row;
+    align-items: end;
+    gap: 1rem; }
+  .Newsletter-field {
+    flex: 1; } }
+
+/*------------------------------------*\
+    #COMPONENTS: SOCIAL
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Social {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle; }
+
+.Social-icon {
+  display: inline-block;
+  height: 20px;
+  margin-right: 16px;
+  width: 20px; }
+  .Social-icon svg {
+    color: #2f2f2f;
+    height: 20px;
+    width: 20px; }
+
+/*------------------------------------*\
+    #COMPONENTS: POST LIST
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.PostList {
+  margin-top: 2.25rem; }
+  @media screen and (min-width: 48em) {
+    .PostList {
+      margin-top: 2.55rem; } }
+.PostListItem-image a {
+  display: block; }
+
+.PostListItem-imageRatio {
+  background-color: #f6f6f6;
+  height: 0;
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%; }
+  .PostListItem-imageRatio img {
+    display: block;
+    /* height: 100%; */
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.PostListItem-title {
+  margin-top: 1.5rem;
+  max-width: 300px; }
+  @media screen and (min-width: 48em) {
+    .PostListItem-title {
+      margin-top: 1.7rem; } }
+.Nav-link {
+  display: inline;
+  margin-left: 16px; }
+
+/*------------------------------------*\
+    #LAYOUTS: FLEX
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.flex {
+  display: flex; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px; }
+
+@media (min-width: 37.5em) {
+  .grid {
+    grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 64em) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+.mt20 {
+  margin-top: 1rem; }
+
+.jcb {
+  justify-content: space-between; }
+
+.jcc {
+  justify-content: center; }
+
+.jcfe {
+  justify-content: flex-end; }
+
+/*------------------------------------*\
+    #UTILITIES: LAYOUT
+\*------------------------------------*/
+.visually-hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
+
+/*------------------------------------*\
+    #UTILITIES: LAZYSIZES
+\*------------------------------------*/
+.lazyload,
+.lazyloading {
+  opacity: 0; }
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms; }
+
+.wrapper {
+  padding: 4%; }
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em); }
+
+/*------------------------------------*\
+    #COMPONENTS: RATIO
+\*------------------------------------*/
+/**
+ * A utility that provides you with a predictable aspect ratio
+ *
+ * 16:9 = ratio wide || 9 ÷ 16 = 0.56 * 100 = 56.25%
+ * 1:1 = ratio square || 1 ÷ 1 = 1 * 100 = 100%
+ * 3:2 = ratio landscape classic ||  2 ÷ 3 = 0.67 * 100 = 67%
+ * 4:3 = ratio landscape || 3 ÷ 4 = 0.75 * 100 = 75%
+ * 3:4 = ratio portrait || 4 ÷ 3 = 1.33 * 100 = 133%
+ * 5:7 = ratio portrait || 7 ÷ 5 = 1.4 * 100 = 140%
+ *
+ * See for more: https://css-tricks.com/aspect-ratio-boxes/
+ */
+[class*='ratio-'] {
+  background-color: var(--color-darker);
+  display: block;
+  position: relative; }
+
+[class*='ratio-'] > * {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.aspect-ratio-wide {
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */ }
+
+.aspect-ratio-square {
+  padding-bottom: 100%;
+  /* 1:1 Aspect Ratio */ }
+
+.aspect-ratio-landscape {
+  padding-bottom: 67%;
+  /* 3:2 Aspect Ratio */ }
+
+.aspect-ratio-portrait {
+  padding-bottom: 140%;
+  /* 5:7 Aspect Ratio */ }
+
+/*# sourceMappingURL=main.css.map */
