@@ -2,7 +2,7 @@ baseurl = "https://typeservices.co/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Type Services"
-theme="ts"
+theme = "ts"
 
 pluralizelisttitles = false
 
@@ -12,85 +12,85 @@ enableEmoji = true
 googleAnalytics = "UA-84736644-3"
 
 [permalinks]
-  articles = "/:section/:slug/"
-  reading = "/:section/:slug/"
+articles = "/:section/:slug/"
+reading = "/:section/:slug/"
 
 [params]
-  keywords = "Hand Drawn Type, Typography Design, Type Foundry, Typefaces, Fonts"
-  description = "Typography Design. London. Hamburg."
-  strapline = "Retail and Custom Typography"
-  location = "Hamburg, Germany"
-  twitter = "@harrycresswell"
-  # Set Cloudinary URL for image hosting
-  cloudinary_url = "https://res.cloudinary.com/harrycresswell/image/upload"
-  # Set Social media links
-  socialTwitter = "https://twitter.com/typeservices"
-  socialPintrest = "https://www.pinterest.co.uk/halcresswell/typeservices/"
-  socialInstagram = "https://www.instagram.com/typeservices/"
-  socialBehance = "https://www.behance.net/typeservices"
+keywords = "Hand Drawn Type, Typography Design, Type Foundry, Typefaces, Fonts"
+description = "Typography Design. London. Hamburg."
+strapline = "Retail and Custom Typography"
+location = "Hamburg, Germany"
+twitter = "@harrycresswell"
+# Set Cloudinary URL for image hosting
+cloudinary_url = "https://res.cloudinary.com/harrycresswell/image/upload"
+# Set Social media links
+socialTwitter = "https://twitter.com/typeservices"
+socialPintrest = "https://www.pinterest.co.uk/halcresswell/typeservices/"
+socialInstagram = "https://www.instagram.com/typeservices/"
+socialBehance = "https://www.behance.net/typeservices"
 
-[author]
-  name = "Harry Cresswell"
+[params.author]
+name = "Harry Cresswell"
 
 [taxonomies]
-  tag = "tags"
+tag = "tags"
 
 [[menu.main]]
-  name = "Fonts"
-  url = "/fonts/"
-  weight = 5
+name = "Fonts"
+url = "/fonts/"
+weight = 5
 
 [[menu.main]]
-  name = "Custom"
-  url = "/custom-fonts/"
-  weight = 10
+name = "Custom"
+url = "/custom-fonts/"
+weight = 10
 
 [[menu.main]]
-  name = "Free fonts"
-  url = "/free-fonts/"
-  weight = 15
+name = "Free fonts"
+url = "/free-fonts/"
+weight = 15
 
 [[menu.footer]]
-  name = "Font Licenses"
-  url = "/licensing/"
-  weight = 5
+name = "Font Licenses"
+url = "/licensing/"
+weight = 5
 
 [[menu.footer]]
-  name = "About"
-  url = "/about/"
-  weight = 10
+name = "About"
+url = "/about/"
+weight = 10
 
 [[menu.footer]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 15
+name = "Contact"
+url = "/contact/"
+weight = 15
 
 [[menu.mobile]]
-  name = "Fonts"
-  url = "/fonts/"
-  weight = 5
+name = "Fonts"
+url = "/fonts/"
+weight = 5
 
 [[menu.mobile]]
-  name = "Custom"
-  url = "/custom-fonts/"
-  weight = 10
+name = "Custom"
+url = "/custom-fonts/"
+weight = 10
 
 [[menu.mobile]]
-  name = "Free Fonts"
-  url = "/free-fonts/"
-  weight = 15
+name = "Free Fonts"
+url = "/free-fonts/"
+weight = 15
 
 [[menu.mobile]]
-  name = "Font Licenses"
-  url = "/licensing/"
-  weight = 20
+name = "Font Licenses"
+url = "/licensing/"
+weight = 20
 
 [[menu.mobile]]
-  name = "About"
-  url = "/about/"
-  weight = 25
+name = "About"
+url = "/about/"
+weight = 25
 
 [[menu.mobile]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 30
+name = "Contact"
+url = "/contact/"
+weight = 30
